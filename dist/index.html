@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="demo.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<body>
+<div id="app" class="viewer" data-page="1">
+    <div class="control">
+        <button onclick="toggleEdit(event)">编辑</button>
+        <button onclick="auto('pitch')">自动1</button>
+        <button onclick="auto('yaw')">自动2</button>
+    </div>
+    <div id="myviewer" class="container"></div>
+    <div class="hotspot link" data-page="1" data-anchor-index="0" data-yaw="52" data-pitch="-14" onclick="lookAt(event)">标记1</div>
+    <div class="hotspot link" data-page="1" data-anchor-index="1" data-yaw="-45" data-pitch="-10" onclick="lookAt(event)">2.1</div>
+    <div class="hotspot link" data-page="1" data-anchor-index="1" data-yaw="-60" data-pitch="-30" onclick="lookAt(event)">2.2</div>
+    <div class="hotspot link" data-page="1" data-anchor-index="2" data-yaw="6" data-pitch="-17" onclick="lookAt(event)">3</div>
+</div>
+</body>
+<script src="main.js" ></script>
+</html>
