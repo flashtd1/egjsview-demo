@@ -14,7 +14,7 @@ const container = document.querySelector('#myviewer')
 const panoViewer = new PanoViewer(
     container,
     {
-        image: '/images/bookcube1.jpg',
+        image: './images/bookcube1.jpg',
         projectionType: PanoViewer.PROJECTION_TYPE.CUBEMAP,
         useZoom: false,
         cubemapConfig: {
