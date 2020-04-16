@@ -9,5 +9,5 @@ COPY . /app
 RUN npm run build
 
 FROM nginx
-COPY --from=0 /app/dist /app
+COPY --from=0 /app/docs /app
 COPY --from=0 /app/nginx.conf /etc/nginx/nginx.conf
